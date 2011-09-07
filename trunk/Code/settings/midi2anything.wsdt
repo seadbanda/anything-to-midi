@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>ST test project/Debug</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>92</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1368</ColumnWidth1><ColumnWidth2>365</ColumnWidth2><ColumnWidth3>91</ColumnWidth3></Build>
+      <TerminalIO/>
+      <Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1825</ColumnWidth1></Debug-Log>
+      <Find-in-Files>
+        
+        
+        
+      <ColumnWidth0>651</ColumnWidth0><ColumnWidth1>93</ColumnWidth1><ColumnWidth2>1117</ColumnWidth2></Find-in-Files>
+    <Disassembly><MixedMode>1</MixedMode><CodeCovShow>1</CodeCovShow><InstrProfShow>1</InstrProfShow></Disassembly></Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-18349-10794</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>ST test project</ExpandedNode><ExpandedNode>ST test project/main.c</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-18265-13661</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-3274-23563</Identity>
+            <TabName>Debug Log</TabName>
+            <Factory>Debug-Log</Factory>
+            <Session/>
+          </Tab>
+          <Tab>
+            <Identity>TabID-1687-9451</Identity>
+            <TabName>Find in Files</TabName>
+            <Factory>Find-in-Files</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\globaldefinitions.h</Filename><XPos>0</XPos><YPos>9</YPos><SelStart>3040</SelStart><SelEnd>3040</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\midi.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>465</SelStart><SelEnd>465</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Serial Port.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>4095</SelStart><SelEnd>4095</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\stm32f10x_conf.h</Filename><XPos>0</XPos><YPos>3</YPos><SelStart>1863</SelStart><SelEnd>1863</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c</Filename><XPos>0</XPos><YPos>880</YPos><SelStart>31223</SelStart><SelEnd>31223</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_RCC.c</Filename><XPos>0</XPos><YPos>1089</YPos><SelStart>37616</SelStart><SelEnd>37629</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\GlobalDeclarations.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>200</SelStart><SelEnd>200</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\Keyboard.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>304</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h</Filename><XPos>0</XPos><YPos>368</YPos><SelStart>24260</SelStart><SelEnd>24260</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c</Filename><XPos>0</XPos><YPos>551</YPos><SelStart>30989</SelStart><SelEnd>30989</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\ControlConfig.c</Filename><XPos>0</XPos><YPos>57</YPos><SelStart>1623</SelStart><SelEnd>1623</SelEnd></Tab><ActiveTab>10</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\STM32F10x_StdPeriph_Lib_V3.5.0\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h</Filename><XPos>0</XPos><YPos>34</YPos><SelStart>2919</SelStart><SelEnd>2919</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>15</YPos><SelStart>763</SelStart><SelEnd>763</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-012aaa50><key>iaridepm.enu1</key></Toolbar-012aaa50></Sizes></Row0></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>925</Bottom><Right>166</Right><x>-2</x><y>-2</y><xscreen>80</xscreen><yscreen>89</yscreen><sizeHorzCX>42463</sizeHorzCX><sizeHorzCY>77123</sizeHorzCY><sizeVertCX>89172</sizeVertCX><sizeVertCY>803293</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>185</Bottom><Right>1886</Right><x>-2</x><y>-2</y><xscreen>1888</xscreen><yscreen>187</yscreen><sizeHorzCX>1002123</sizeHorzCX><sizeHorzCY>162045</sizeHorzCY><sizeVertCX>42463</sizeVertCX><sizeVertCY>77123</sizeVertCY></Rect></Wnd2></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
