@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=2042097922
+Checksum=1728666215
 [StackPlugin]
 Enabled=1
 OverflowWarningsEnabled=0
@@ -46,6 +46,15 @@ ActionState=1
 [TraceHelper]
 Enabled=0
 ShowSource=1
+[Disassemble mode]
+mode=0
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\main.c}.82.1@1" 0 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{$PROJ_DIR$\main.c}.65.3@1" 0 0 0 0 "" 0 ""
+Bp2=_ "STD_CODE" "{$PROJ_DIR$\main.c}.82.1@1" 0 0 0 0 "" 0 ""
+Bp3=_ "STD_CODE" "{$PROJ_DIR$\main.c}.82.1@1" 0 0 0 0 "" 0 ""
+Bp4=_ "STD_CODE" "{$PROJ_DIR$\main power test.c}.40.5@1" 0 0 0 0 "" 0 ""
+Count=5
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -53,17 +62,6 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
-[Disassemble mode]
-mode=0
-[Breakpoints]
-Bp0=_ "STD_CODE" "{$PROJ_DIR$\main.c}.87.1@1" 0 0 0 0 "" 0 ""
-Bp1=_ "STD_CODE" "{$PROJ_DIR$\main.c}.70.3@1" 0 0 0 0 "" 0 ""
-Bp2=_ "STD_CODE" "{$PROJ_DIR$\main.c}.87.1@1" 0 0 0 0 "" 0 ""
-Bp3=_ "STD_CODE" "{$PROJ_DIR$\main.c}.87.1@1" 0 0 0 0 "" 0 ""
-Bp4=_ "STD_CODE" "{$PROJ_DIR$\main power test.c}.40.5@1" 0 0 0 0 "" 0 ""
-Bp5=_ "STD_CODE" "{$PROJ_DIR$\main.c}.34.3@1" 1 0 0 0 "" 0 ""
-Bp6=_ "STD_CODE" "{$PROJ_DIR$\ControlConfig.c}.74.17@1" 1 0 0 0 "" 0 ""
-Count=7
 [Aliases]
 Count=0
 SuppressDialog=0

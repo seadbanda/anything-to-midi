@@ -7,28 +7,40 @@
 
 // ************************ Global Functions ********************************
 
-extern u8 DefaultConfiguration(void);
-extern u8 Configure_UART();
-extern u8 UART_Send(u8 DataToSend);
-extern u8 ReadKeyboard();
-extern u8 SendMessage();
+extern uint8_t DefaultConfiguration(void);
+extern uint8_t Configure_UART();
+extern uint8_t UART_Send(u8 DataToSend);
+extern uint8_t ReadKeyboard();
+extern uint8_t SendMessage();
 
 // Midi Commands
 
 // Channel Voice Message
-extern u8 Midi_Note_Off(u8 _u8_channel, u8 _u8_note, u8 _u8_velocity);
-extern u8 Midi_Note_On(u8 _u8_channel, u8 _u8_note, u8 _u8_velocity);
-extern u8 Midi_Poly_Key_Pressure(u8 _u8_channel, u8 _u8_note, u8 _u8_velocity);
-extern u8 Midi_Control_Change(u8 _u8_channel, u8 _u8_controller, u8 _u8_value);
-extern u8 Midi_Program_Change(u8 _u8_channel, u8 _u8_program);
-extern u8 Midi_Channel_Pressure(u8 _u8_channel, u8 _u8_pressure);
-extern u8 Midi_Pitch_Wheel(u8 _u8_channel, u16 _u16_value);
+extern uint8_t Midi_Note_Off(u8 _u8_channel, u8 _u8_note, u8 _u8_velocity);
+extern uint8_t Midi_Note_On(u8 _u8_channel, u8 _u8_note, u8 _u8_velocity);
+extern uint8_t Midi_Poly_Key_Pressure(u8 _u8_channel, u8 _u8_note, u8 _u8_velocity);
+extern uint8_t Midi_Control_Change(u8 _u8_channel, u8 _u8_controller, u8 _u8_value);
+extern uint8_t Midi_Program_Change(u8 _u8_channel, u8 _u8_program);
+extern uint8_t Midi_Channel_Pressure(u8 _u8_channel, u8 _u8_pressure);
+extern uint8_t Midi_Pitch_Wheel(u8 _u8_channel, u16 _u16_value);
 
 // Channel Mode Messages
-extern u8 Midi_Sound_Off(u8 _u8_channel);
-extern u8 Midi_Reset_All_Controllers(u8 _u8_channel);
-extern u8 Midi_Local_Control(u8 _u8_channel);
-extern u8 Midi_All_Notes_Off(u8 _u8_channel);
+extern uint8_t Midi_Sound_Off(u8 _u8_channel);
+extern uint8_t Midi_Reset_All_Controllers(u8 _u8_channel);
+extern uint8_t Midi_Local_Control(u8 _u8_channel);
+extern uint8_t Midi_All_Notes_Off(u8 _u8_channel);
+
+
+// ************************ Static RAM Variables ********************************
+
+static uint16_t CurrentNoteStatus;   // are the 14 notes on of off
+static uint16_t CurrentVelocity[14]; // The velocities for all of the notes that are on. To check to see if velocities have changed
+static uint8_t test;
+
+
+
+
+
 
 
 
@@ -111,34 +123,17 @@ __no_init uint8_t MIDI13CURVE @ 0x08007839;
 
 
 
-__no_init uint8_t MIDI0OFFSET @ 0x0800783a;
-__no_init uint8_t MIDI1OFFSET @ 0x0800783b;
-__no_init uint8_t MIDI2OFFSET @ 0x0800783c;
-__no_init uint8_t MIDI3OFFSET @ 0x0800783d;
-__no_init uint8_t MIDI4OFFSET @ 0x0800783e;
-__no_init uint8_t MIDI5OFFSET @ 0x0800783f;
-__no_init uint8_t MIDI6OFFSET @ 0x08007840;
-__no_init uint8_t MIDI7OFFSET @ 0x08007841;
-__no_init uint8_t MIDI8OFFSET @ 0x08007842;
-__no_init uint8_t MIDI9OFFSET @ 0x08007843;
-__no_init uint8_t MIDI10OFFSET @ 0x08007844;
-__no_init uint8_t MIDI11OFFSET @ 0x08007845;
-__no_init uint8_t MIDI12OFFSET @ 0x08007846;
-__no_init uint8_t MIDI13OFFSET @ 0x08007847;
-
-
-
-__no_init uint8_t MIDI0NOTE@ 0x08007848;
-__no_init uint8_t MIDI1NOTE@ 0x08007849;
-__no_init uint8_t MIDI2NOTE@ 0x0800784a;
-__no_init uint8_t MIDI3NOTE@ 0x0800784b;
-__no_init uint8_t MIDI4NOTE@ 0x0800784c;
-__no_init uint8_t MIDI5NOTE@ 0x0800784d;
-__no_init uint8_t MIDI6NOTE@ 0x0800784e;
-__no_init uint8_t MIDI7NOTE@ 0x0800784f;
-__no_init uint8_t MIDI8NOTE@ 0x08007850;
-__no_init uint8_t MIDI9NOTE@ 0x08007850;
-__no_init uint8_t MIDI10NOTE@ 0x08007850;
-__no_init uint8_t MIDI11NOTE@ 0x08007850;
-__no_init uint8_t MIDI12NOTE@ 0x08007850;
-__no_init uint8_t MIDI13NOTE@ 0x08007850;
+__no_init uint8_t MIDI0NOTE @ 0x0800783a;
+__no_init uint8_t MIDI1NOTE @ 0x0800783b;
+__no_init uint8_t MIDI2NOTE @ 0x0800783c;
+__no_init uint8_t MIDI3NOTE @ 0x0800783d;
+__no_init uint8_t MIDI4NOTE @ 0x0800783e;
+__no_init uint8_t MIDI5NOTE @ 0x0800783f;
+__no_init uint8_t MIDI6NOTE @ 0x08007840;
+__no_init uint8_t MIDI7NOTE @ 0x08007841;
+__no_init uint8_t MIDI8NOTE @ 0x08007842;
+__no_init uint8_t MIDI9NOTE @ 0x08007843;
+__no_init uint8_t MIDI10NOTE @ 0x08007844;
+__no_init uint8_t MIDI11NOTE @ 0x08007845;
+__no_init uint8_t MIDI12NOTE @ 0x08007846;
+__no_init uint8_t MIDI13NOTE @ 0x08007847;
