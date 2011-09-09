@@ -10,6 +10,6 @@
 @REM 
 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\common\bin\cspybat" "C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\arm\bin\armproc.dll" "C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\arm\bin\armstlink.dll"  %1 --plugin "C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\arm\bin\armbat.dll" --flash_loader "C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\arm\config\flashloader\ST\FlashSTM32F10xxB.board" --backend -B "--endian=little" "--cpu=Cortex-M3" "--fpu=None" "-p" "C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\arm\CONFIG\debugger\ST\iostm32f10xxb.ddf" "--drv_verify_download" "--semihosting" "--device=STM32F10xxB" 
+"C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\common\bin\cspybat" "C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\arm\bin\armproc.dll" "C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\arm\bin\armstlink.dll"  %1 --plugin "C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\arm\bin\armbat.dll" --backend -B "--endian=little" "--cpu=Cortex-M3" "--fpu=None" "-p" "C:\Program Files\IAR Systems\Embedded Workbench 6.0 Kickstart\arm\CONFIG\debugger\ST\iostm32f10xxb.ddf" "--drv_verify_download" "--semihosting" "--device=STM32F10xxB" 
 
 

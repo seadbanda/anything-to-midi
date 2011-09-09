@@ -17,22 +17,17 @@
 #include "stm32f10x_flash.c"
 
 
-u32    g_u32_CurrentTimeLow;
-u16    g_u16_CurrentTimeHigh;
-u32    g_u32_TimeLow;
-u16    g_u16_TimeHigh;
-u8     g_u8_Seconds;
-u8     _RTC_flags;
-
 int main()
 {
   
-  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);  // enable the clock for PORT D
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);  // enable the clock for PORT D
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
+  RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
   //RCC_APB2ENR = RCC_APB2ENR | BIT4 | BIT3 | BIT2 | BIT12 ;  // enable the clock for Port C and A and B  
   
 
   DefaultConfiguration();
-  
   Configure_UART();
   while(1){
     
@@ -52,7 +47,7 @@ int main()
   
   
   
-//  GPIO_InitTypeDef GPIO_InitStructure;  
+  GPIO_InitTypeDef GPIO_InitStructure;  
 //  
 //  
 //  // Set PWRON to Output Open Drain

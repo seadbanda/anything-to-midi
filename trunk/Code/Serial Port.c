@@ -49,7 +49,7 @@ This function configures the UART to 38400 baud and sets up the RCC config and G
 
 */
 
-extern u8 Configure_UART(){
+extern uint8_t Configure_UART(){
   
   
   
@@ -131,7 +131,7 @@ Returns OK if the transmission is sucessful, NOK if it fails.
 
 */
 
-extern u8 UART_Send(u8 DataToSend){
+extern uint8_t UART_Send(u8 DataToSend){
   
   while(USART_GetFlagStatus(USART_USB, USART_FLAG_TXE) == RESET);
   USART_SendData(USART_USB, DataToSend);
@@ -140,7 +140,7 @@ extern u8 UART_Send(u8 DataToSend){
 }
 
 
-u8 Check_And_Recieve_UART(){
+uint8_t Check_And_Recieve_UART(){
   if(USART_GetFlagStatus(USART_USB, USART_FLAG_RXNE) == SET)
     return USART_ReceiveData(USART_USB);
   else
