@@ -1,0 +1,4 @@
+The Hardware and associated firmware/drivers/software to allow users to build there own midi controller out of any sort of keys, switches, dials, or anything else one chooses.
+The hardware is based around an STM32 ARM Cortex M3 microcontroller from ST microelectronics. It uses an external USB interface to simplify USB integration.
+The hardware can be used to control external midi devices, or connected to a computer via Midi or USB.
+There are 14 Input channels used for on/off, velocity coded signals, or analogue signals. They can also be used in a matrix to make 196 on/off inputs or 98 velocity coded signals.
